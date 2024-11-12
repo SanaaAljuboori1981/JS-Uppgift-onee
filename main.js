@@ -1,6 +1,10 @@
 // Array to store employee data
 let employees = [];
 
+const video = document.createElement("video")
+video.src = ""
+
+
 // Function to add a new employee
 function addEmployee() {
     const name = document.getElementById("name").value;
