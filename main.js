@@ -26,7 +26,7 @@ function getRandomTile() {
     return num.toString();
 }
 
-unction setMole() {
+function setMole() {
     if (gameOver) {
         return;
     }
@@ -37,14 +37,14 @@ unction setMole() {
     mole.src = "./monty-mole.png";
 
     let num = getRandomTile();
-    if (currPlantTile && currPlantTile.id == num) {
-        return;
+    if (currPlantTile && currPlantTile.id === num) {
+        return; //Avoid placing mole on a tile with a plant
     }
     currMoleTile = document.getElementById(num);
     currMoleTile.appendChild(mole);
 }
 
-unction setPlant() {
+function setPlant() {
     if (gameOver) {
         return;
     }
@@ -55,24 +55,22 @@ unction setPlant() {
     plant.src = "./piranha-plant.png";
 
     let num = getRandomTile();
-    if (currMoleTile && currMoleTile.id == num) {
+    if (currMoleTile && currMoleTile.id === num) {
         return;
     }
     currPlantTile = document.getElementById(num);
     currPlantTile.appendChild(plant);
 }
 
-unction selectTile() {
+function selectTile() {
     if (gameOver) {
         return;
     }
-    if (this == currMoleTile) {
+    if (this === currMoleTile) {
         score += 10;
-        document.getElementById("score").innerText = score.toString(); //update score html
-    }
-    else if (this == currPlantTile) {
-        document.getElementById("score").innerText = "GAME OVER: " + score.toString(); //update score html
+        document.getElementById("score").innerText = score.toString(); // Update score in HTML
+    } else if (this === currPlantTile) {
+        document.getElementById("score").innerText = "GAME OVER: " + score.toString(); // Update score in HTML
         gameOver = true;
     }
 }
-
