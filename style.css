@@ -1,37 +1,32 @@
-body {
-    background: url('assets/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: Arial, sans-serif;
-    color: #333;
+body {..
+
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+
+    /* background-color: green; */
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    flex-wrap: wrap;
+ 
+    background: url("./soil.png");
+    background-size: cover;
+    border: 3px solid rgb(214, 50, 203);
+    border-radius: 25px; 
 }
 
-.container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+#board div {
+    /* board = 540 x 540, divide into 3x3 tiles --> 180 x 180 per div */
+    width: 180px;
+    height: 180px;
+    background-image: url("./pipe.png");
+    background-size: cover;
 }
 
-h1 {
-    color: #333;
-}
-
-.paths button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.paths button:hover {
-    background-color: #0056b3;
+#board div img {
+       /* all img tags inside tiles */
+       width: 100px;
+       height: 100px;
 }
