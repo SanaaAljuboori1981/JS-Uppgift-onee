@@ -2,7 +2,6 @@ let currMoleTile;
 let currPlantTile;
 let score = 0;
 let gameOver = false;
-
 window.onload = function() {
     setGame();
 }
@@ -74,4 +73,5 @@ function selectTile() {
         document.getElementById("score").innerText = "GAME OVER: " + score.toString(); // Update score in HTML
         gameOver = true;
     }
+
 }
