@@ -20,8 +20,8 @@ This is a fun, interactive game built using HTML, CSS, and JavaScript. It is des
 - Game Over Mechanic: Game ends if the player clicks on a piranha plant.
 - Responsive Design: Scales properly for different screen sizes.
 
-##Installation**
-- Clone the repository
+**##Installation**
+**- Clone the repository
 - Navigate to the project folder
 - Open the index.html file in your browser to start the game.
 
