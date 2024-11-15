@@ -3,13 +3,13 @@
 Title: #Super Mario Whack-a-Mole Game
 This is a web-based whack-a-mole game inspired by Super Mario. The objective is to click on the mole to score points while avoiding the piranha plants.
 
-##Table of Contents
--Project Overview
--Features
--Installation
--How to Play
--Technologies Used
--Demo
+Table of Contents
+Project Overview
+Features
+Installation
+How to Play
+Technologies Used
+Demo
 
 ##Project Overview
 This is a fun, interactive game built using HTML, CSS, and JavaScript. It is designed as a 3x3 grid where moles and piranha plants randomly appear in different cells. The player gains points by clicking on moles and loses if they click on a piranha plant
