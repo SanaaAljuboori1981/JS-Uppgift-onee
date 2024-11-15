@@ -69,6 +69,7 @@ function selectTile() {
     if (this === currMoleTile) {
         score += 10;
         document.getElementById("score").innerText = score.toString(); // Update score in HTML
+        
     } else if (this === currPlantTile) {
         document.getElementById("score").innerText = "GAME OVER: " + score.toString(); // Update score in HTML
         gameOver = true;
